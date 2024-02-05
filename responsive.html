@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Odin Fox, Alexander Lai
+Submission  : February 5th, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -17,10 +17,9 @@ Description : Responsive Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<link rel="menu" href="menu.css">
 
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
+	<!--<style>		
 		div {
 			border: 1px dashed gray;	
 		}
@@ -36,7 +35,7 @@ Description : Responsive Layouts.
 		.small {
 			border: 1px solid yellow;	
 		}		
-	</style>
+	</style>-->
 
     <style>
 		body { margin: 0; padding: 0;}
@@ -48,35 +47,65 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
-			/*I need some CSS codes.*/		
+			display: table;
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			display: table-cell;
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			padding-bottom: 50px
 		}
 
-		@media screen and (min-width: 769px) {			
+		@media screen and (min-width: 769px) {	
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				width: 30%;
 			 }
 		}
 
         @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
+			.main {
+				margin-left: 0px;
+			}
+			.menu {
+				background-color: lightgray;
+				padding:2px;
+				width:100%;
+				margin: 0
+			}
+			.menu ul li {
+    			display: inline;
+				text-align: center;
+				margin-left: 11%;
+				}
+
+            .large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 60%;
+			}
+			.small { 
+				width: 40%;
+			 }
         }
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+			
+			.large, .medium, .small {
+			display: table-row;
+			width: 100%
+		}
+			.header {
+				font-size: 18px;
+			}
         }
 
         
