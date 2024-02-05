@@ -8,5 +8,6 @@
 | Alexander Lai |
 ## Screenshots
 ### Exercise B
+![Exercise B Final Output](./MyExerciseB.gif)
 ### Exercise C
-![Exercise C Final Output](./ExerciseC.gif)
+![Exercise C Final Output](./MyExerciseC.gif)
