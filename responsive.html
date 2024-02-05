@@ -2,8 +2,8 @@
 =========================================================
 Name        : index.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Odin Fox, Alexander Lai
+Submission  : February 5th, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -17,10 +17,9 @@ Description : Responsive Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<link rel="menu" href="menu.css">
 
-	<style>	
-		/* Remove borders at the end, they have been add just for detecting positions of items*/	
+	<!--<style>		
 		div {
 			border: 1px dashed gray;	
 		}
@@ -36,7 +35,7 @@ Description : Responsive Layouts.
 		.small {
 			border: 1px solid yellow;	
 		}		
-	</style>
+	</style>-->
 
     <style>
 		body { margin: 0; padding: 0;}
@@ -48,35 +47,70 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
-			/*I need some CSS codes.*/		
+			display: table;
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+			display: table-cell;
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			padding-bottom: 50px
 		}
 
-		@media screen and (min-width: 769px) {			
+		@media screen and (min-width: 769px) {
+			.menu ul li {
+    			width:10%;
+				background-color: lightgrey;
+				padding: 2px
+				}	
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				width: 30%;
 			 }
 		}
 
         @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
+			.main {
+				margin-left: 0px;
+			}
+			.menu {
+				background-color: lightgray;
+				padding:2px;
+				width:100%;
+				margin: 0
+			}
+			.menu ul li {
+    			display: inline;
+				text-align: center;
+				margin-left: 11%;
+				}
+
+            .large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 60%;
+			}
+			.small { 
+				width: 40%;
+			 }
         }
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+			
+			.large, .medium, .small {
+			display: table-row;
+			width: 100%
+		}
+			h1 {
+				font-size: 18px;
+			}
         }
 
         
@@ -135,15 +169,15 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Odin Fox Takes a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
 						<h2>A Historic Moment in Space Exploration</h2>
-						<p>In an unprecedented feat of human courage and technological prowess, astronaut Mahdi Ansari completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
+						<p>In an unprecedented feat of human courage and technological prowess, astronaut Odin Fox completed a spacewalk near the International Space Station (ISS), marking a new milestone in space exploration.</p>
 
 						<h3>A Breathtaking Journey</h3>
-						<p>Ansari, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
+						<p>Fox, aboard the spacecraft Voyager X, ventured out into the void of space, capturing breathtaking views of Earth and conducting important research that could pave the way for future interstellar travel.</p>
 
 						<h3>Pushing the Boundaries of Science</h3>
 						<p>The successful spacewalk not only demonstrates human resilience but also advances our understanding of space and our capabilities to explore further into the unknown.</p>
